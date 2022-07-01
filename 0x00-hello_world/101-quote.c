@@ -12,5 +12,5 @@ int main(void)
 
 
 	write (2, qout, 59);
-	return(1);
+	return (1);
 }
