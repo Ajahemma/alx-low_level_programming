@@ -1,6 +1,6 @@
 /*
  * File: 0-putchar.c
- * Auth: Ajah Emmanuel
+ * Auth: Ajahemma
  *
  */
 #include "main.h"
