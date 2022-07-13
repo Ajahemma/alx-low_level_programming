@@ -1,31 +1,29 @@
 #include <stdio.h>
-/**
- * main - writes 00 -99
- * Description : writes all unique combinations
- * Return : zero for success
- */
 
+/**
+  * main - starting point of execution
+  * Prints all possible different combinations
+  * of two digits with sime conditions
+  * Return: 0 on success
+  */
 int main(void)
 {
-	int i, j;
+	int n, i;
 
-	for (i = '0'; i <= '9'; i++)
+	for (n = 0 ; n < 9 ; n++)
 	{
-		for (j = '0'; j <= '9'; j++)
-		{
-			if ((i < j) & (j <= '9'))
+		i = n + 1;
+		do {
+			putchar(n + '0');
+			putchar(i + '0');
+			if (n < 8)
 			{
-				putchar(i);
-				putchar(j);
-				if ((j < '9' | (i < '8'))
-				{
-					putchar(',');
-					putchar('');
-				}
+				putchar(',');
+				putchar(' ');
 			}
-		}
+			i++;
+		} while (i < 10);
 	}
-
 	putchar('\n');
 	return (0);
 }
