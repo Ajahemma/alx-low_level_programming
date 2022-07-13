@@ -1,27 +1,26 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 
 /**
- * main - Writes 0-9
- * Description: writes 0-9 with comma and space
- * Return: zero on success
- */
-
+  * main - starting point of code running
+  * prints all single digit number of base 10
+  * using putchar to print
+  * put comma on every number
+  * Return: 0 is successful
+  */
 int main(void)
 {
-	int num = '0';
+	int i;
 
-	while (num <= '9')
+	for (i = 0; i < 10; i++)
 	{
-		putchar(num + '0');
-		if (num < '9')
+		putchar(i + '0');
+
+		if (i != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		num++;
 	}
 	putchar('\n');
-
 	return (0);
+}
