@@ -2,7 +2,7 @@
 /**
  * print_rev -prints a string in reverse via putchar
  * @s: a string to print in reverse
- * Author: Onwudiwe Chimezie
+ * Author: Ajah Emmanuel
  * Return: a void
  */
 void print_rev(char *s)
