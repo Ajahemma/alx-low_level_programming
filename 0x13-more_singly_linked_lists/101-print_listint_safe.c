@@ -31,9 +31,9 @@ size_t looped_listint_len(const listint_t *head)
 			slowP = head;
 			while (slowP != fastP)
 			{
-																		nodes++;
-																		slowP = slowP->next;
-																		fastP = fastP->next;
+				nodes++;
+				slowP = slowP->next;
+				fastP = fastP->next;
 			}
 
 			slowP = slowP->next;
@@ -78,11 +78,11 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		for (index = 0; index < nodes; index++)
 		{
-																	printf("[%p] %d\n", (void *)head, head->n);
-																	head = head->next;
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
 		}
 
-			printf("-> [%p] %d\n", (void *)head, head->n);
+		printf("-> [%p] %d\n", (void *)head, head->n);
 	}
 
 	return (nodes);
