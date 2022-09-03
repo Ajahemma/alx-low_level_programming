@@ -27,23 +27,23 @@ size_t looped_listint_len(const listint_t *head)
 	while (fastP)
 	{
 		if (slowP == fastP)
-			{
-																		slowP = head;
-																		while (slowP != fastP)
-																		{
-																			nodes++;
-																			slowP = slowP->next;
-																			fastP = fastP->next;
-																		}
-
+		{
+																	slowP = head;
+																	while (slowP != fastP)
+																	{
+																		nodes++;
 																		slowP = slowP->next;
-																		while (slowP != fastP)
-																		{
-																																	nodes++;
-																																	slowP = slowP->next;
-																		}
+																		fastP = fastP->next;
+																	}
 
-																		return (nodes);
+																	slowP = slowP->next;
+																	while (slowP != fastP)
+																	{
+																																nodes++;
+																																slowP = slowP->next;
+																	}
+
+																	return (nodes);
 																															}
 
 		slowP = slowP->next;
