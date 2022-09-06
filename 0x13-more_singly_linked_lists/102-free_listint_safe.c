@@ -32,7 +32,7 @@ size_t looped_listint_count(listint_t *head)
 			{
 				nodes++;
 				tortoise = tortoise->next;
-				hare = hare->next																										}
+				hare = hare->next;																										}
 		
 
 			tortoise = tortoise->next;
@@ -43,7 +43,8 @@ size_t looped_listint_count(listint_t *head)
 			}
 
 			return (nodes);
-																}
+		
+		}
 																tortoise = tortoise->next;
 																hare = (hare->next)->next;
 																														}
