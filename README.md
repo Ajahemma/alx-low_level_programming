@@ -1,1 +1,1 @@
-My first readme
+My low-level programming tasks
